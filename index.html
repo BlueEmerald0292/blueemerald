@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,80 +6,109 @@
   <title>BLUE EMERALD | COMMERCIAL SPACES AT WANOWRIE</title>
   <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Cinzel+Decorative:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Montserrat', sans-serif; margin: 0; background: #0f2027; color: white; }
-    header { font-family: 'Bruno Ace SC', cursive; background: #000; padding: 2rem; text-align: center; text-transform: uppercase; }
-    nav { background: #111; display: flex; justify-content: center; flex-wrap: wrap; }
-    nav a { color: white; padding: 1rem; text-decoration: none; text-transform: uppercase; }
-    section { padding: 2rem; }
-    h2 { font-family: 'Copperplate Gothic', serif; text-transform: uppercase; border-bottom: 2px solid #555; padding-bottom: 0.5rem; }
-    .slideshow { margin-top: 70px; height: 500px; overflow: hidden; position: relative; }
+    body { margin: 0; font-family: 'Montserrat', sans-serif; background: linear-gradient(to right, #1e3c72, #2a5298); color: #fff; }
+    header { text-align: center; padding: 2rem; background: #000; font-family: 'Bruno Ace SC', cursive; text-transform: uppercase; }
+    nav { text-align: center; background: #111; padding: 1rem; position: sticky; top: 0; z-index: 999; }
+    nav a { color: #ffce00; margin: 0 1rem; text-decoration: none; text-transform: uppercase; font-weight: bold; }
+    section { padding: 3rem 1.5rem; }
+    h2 { font-family: 'Cinzel Decorative', cursive; text-transform: uppercase; border-bottom: 2px solid #ffce00; padding-bottom: 0.5rem; }
+    ul { padding-left: 1.5rem; }
+    .slideshow { position: relative; height: 500px; overflow: hidden; }
     .slideshow img { width: 100%; height: 500px; object-fit: cover; display: none; }
     .slideshow img.active { display: block; }
-    .hero-text { position: absolute; top: 30%; width: 100%; text-align: center; font-size: 2.5rem; font-family: 'Cinzel Decorative'; text-transform: uppercase; color: white; text-shadow: 2px 2px 8px black; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
-    .gallery img { width: 100%; border-radius: 8px; }
-    .contact-form input, .contact-form textarea { width: 100%; padding: 0.75rem; margin: 0.5rem 0; border-radius: 4px; border: none; }
-    .contact-form button { background: #ffce00; border: none; padding: 0.75rem 1.5rem; font-weight: bold; text-transform: uppercase; cursor: pointer; }
-    footer { background: #111; text-align: center; padding: 1rem; text-transform: uppercase; }
+    .hero-text { position: absolute; top: 40%; width: 100%; text-align: center; font-size: 2.5rem; text-shadow: 2px 2px 10px black; font-family: 'Cinzel Decorative'; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin-top: 1rem; }
+    .gallery img { width: 100%; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.5); }
+    .cta { background: #ffce00; color: #000; padding: 1rem 2rem; border: none; border-radius: 4px; font-weight: bold; font-size: 1.2rem; margin: 1rem auto; display: block; cursor: pointer; text-align: center; text-decoration: none; }
+    footer { background: #000; text-align: center; padding: 1.5rem; text-transform: uppercase; font-size: 0.9rem; }
+    a.download { color: #ffce00; text-decoration: underline; font-weight: bold; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>BLUE EMERALD</h1>
-    <p>Premium Commercial Spaces at Wanowrie</p>
-  </header>
-  <nav>
-    <a href="#project">Project</a>
-    <a href="#specs">Specifications</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <div class="slideshow">
-    <div class="hero-text">Experience Elegance in Every Square Foot</div>
-    <img src="images/slide1.jpg" class="active">
-    <img src="images/slide2.jpg">
-    <img src="images/slide3.jpg">
+
+<header>
+  <h1>Blue Emerald</h1>
+  <p>Premium Commercial Spaces at Wanowrie</p>
+</header>
+
+<nav>
+  <a href="#project">Project</a>
+  <a href="#architecture">Architecture</a>
+  <a href="#specs">Specifications</a>
+  <a href="#location">Location</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="slideshow">
+  <div class="hero-text">Elegance. Visibility. Value.</div>
+  <img src="images/slide1.jpg" class="active">
+  <img src="images/slide2.jpg">
+  <img src="images/slide3.jpg">
+</div>
+
+<section id="project">
+  <h2>About the Project</h2>
+  <p>Blue Emerald is a 7-storey commercial marvel located at Wanowrie junction, Pune. The project includes just 15 spacious office units and a designer rooftop terrace, providing businesses with a premium address in the city. Its curved glass façade, thoughtful design, and optimal space planning make it a stand-out development.</p>
+</section>
+
+<section id="architecture">
+  <h2>Architecture & Design</h2>
+  <p>Designed by <strong>Envision Studio</strong>, a leading architectural firm with over 15 years of experience, Blue Emerald features a curved glass façade, modern elevation, and optimized interior layouts. It combines form and function with finesse, catering to every business need.</p>
+</section>
+
+<section id="specs">
+  <h2>Specifications</h2>
+  <ul>
+    <li>Earthquake Resistant RCC Frame Structure</li>
+    <li>High-speed Elevators with Power Backup</li>
+    <li>Anti-skid Ceramic Tiles in Toilets and Terraces</li>
+    <li>Designer Flush Doors with Decorative Fittings</li>
+    <li>Superior Quality Concealed Plumbing</li>
+    <li>Concealed Copper Wiring with Modular Switches</li>
+    <li>Aluminium Sliding Windows with Mosquito Net and M.S. Grills</li>
+    <li>Oil Bound Distemper for Interior & Apex Paint for Exterior Walls</li>
+    <li>Elegant Lobby with Lighting and Granite Cladding</li>
+    <li>Ample Parking Space with Wide Entry and Exit</li>
+  </ul>
+</section>
+
+<section id="location">
+  <h2>Location & Connectivity</h2>
+  <p>Situated at <strong>Sr. No. 75/9, Shantinagar, Wanowrie, Pune</strong>, Blue Emerald enjoys outstanding access to Fatima Nagar, Salunke Vihar, Hadapsar, Camp, and NIBM. It is surrounded by hospitals, malls, showrooms, restaurants, and more. Located on an 80 ft. main road with excellent visibility and access.</p>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="images/gallery1.jpg" alt="Glass Building Front">
+    <img src="images/gallery2.jpg" alt="Lobby Area">
+    <img src="images/gallery3.jpg" alt="Office Interiors">
   </div>
-  <section id="project">
-    <h2>About the Project</h2>
-    <p>Blue Emerald is a premium commercial development located at Wanowrie, Pune. With only 15 offices across 7 floors and a rooftop terrace, this project combines elegance and functionality for growing businesses.</p>
-  </section>
-  <section id="specs">
-    <h2>Specifications</h2>
-    <ul>
-      <li>Earthquake Resistant RCC Frame Structure</li>
-      <li>High-speed Elevators</li>
-      <li>Anti-skid Ceramic Tiles in Toilets & Terraces</li>
-      <li>Superior Concealed Plumbing & Electricals</li>
-    </ul>
-  </section>
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="images/gallery1.jpg" alt="Gallery Image 1">
-      <img src="images/gallery2.jpg" alt="Gallery Image 2">
-      <img src="images/gallery3.jpg" alt="Gallery Image 3">
-    </div>
-  </section>
-  <section id="contact" class="contact-form">
-    <h2>Contact Us</h2>
-    <p>Phone: <a href="tel:+917447474817">+91 74474 74817</a>, <a href="tel:+917447474818">+91 74474 74818</a></p>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Inquiry</button>
-    </form>
-  </section>
-  <footer>&copy; 2025 Blue Emerald | Designed for Wanowrie, Pune</footer>
-  <script>
-    const slides = document.querySelectorAll('.slideshow img');
-    let currentSlide = 0;
-    setInterval(() => {
-      slides[currentSlide].classList.remove('active');
-      currentSlide = (currentSlide + 1) % slides.length;
-      slides[currentSlide].classList.add('active');
-    }, 4000);
-  </script>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:blueemerald.dnp@gmail.com" style="color:#ffce00;">blueemerald.dnp@gmail.com</a></p>
+  <p>Call us directly:</p>
+  <a href="tel:+917447474817" class="cta">📞 +91 74474 74817</a>
+  <a href="tel:+917447474818" class="cta">📞 +91 74474 74818</a>
+  <p><a href="BlueEmerald_Brochure.pdf" class="download" download>📥 Download Brochure (PDF)</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Blue Emerald | Developed by DNP Group | Wanowrie, Pune
+</footer>
+
+<script>
+  const slides = document.querySelectorAll('.slideshow img');
+  let currentSlide = 0;
+  setInterval(() => {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }, 4000);
+</script>
+
 </body>
 </html>
