@@ -4,28 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blue Emerald | Commercial Spaces at Wanowrie</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
-    body { font-family: 'Montserrat', sans-serif; margin: 0; background: #fdfdfd; color: #333; }
-    header { background: #000; color: white; text-align: center; padding: 1rem; font-family: 'Playfair Display', serif; }
-    nav { background: rgba(0, 0, 0, 0.8); position: sticky; top: 0; z-index: 1000; display: flex; justify-content: center; flex-wrap: wrap; }
-    nav a { color: white; padding: 1rem; text-decoration: none; transition: background 0.3s; }
-    nav a:hover { background: #333; }
-    section { padding: 2rem; animation: fadeIn 1s ease-in-out; }
-    .slideshow { width: 100%; max-height: 600px; overflow: hidden; position: relative; }
-    .slideshow img { width: 100%; height: auto; display: none; animation: fadeInSlide 2s ease-in-out; }
-    .slideshow img.active { display: block; }
-    .hero-text { position: absolute; top: 30%; width: 100%; text-align: center; color: white; text-shadow: 2px 2px 6px rgba(0,0,0,0.8); font-size: 2rem; font-family: 'Playfair Display', serif; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin-top: 1rem; }
-    .gallery img { width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
-    .gallery img:hover { transform: scale(1.05); }
-    .contact-form input, .contact-form textarea { width: 100%; padding: 0.75rem; margin: 0.5rem 0; border: 1px solid #ccc; border-radius: 4px; }
-    .contact-form button { background: #222; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; cursor: pointer; }
-    footer { background: #111; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      color: #fff;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    }
+    header {
+      background: rgba(0,0,0,0.85);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-family: 'Playfair Display', serif;
+    }
+    nav {
+      background: rgba(0, 0, 0, 0.6);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    section {
+      padding: 3rem 2rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+    h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid #fff3;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .slideshow {
+      width: 100%;
+      max-height: 600px;
+      overflow: hidden;
+      position: relative;
+    }
+    .slideshow img {
+      width: 100%;
+      height: auto;
+      display: none;
+      animation: fadeInSlide 2s ease-in-out;
+    }
+    .slideshow img.active {
+      display: block;
+    }
+    .hero-text {
+      position: absolute;
+      top: 30%;
+      width: 100%;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+      font-size: 2.5rem;
+      font-family: 'Playfair Display', serif;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      background: #ffce00;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      background: rgba(0,0,0,0.7);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    a { color: #ffce00; }
 
-    @keyframes fadeInSlide { from { opacity: 0; transform: scale(1.05); } to { opacity: 1; transform: scale(1); } }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeInSlide {
+      from { opacity: 0; transform: scale(1.05); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
   </style>
 </head>
 <body>
@@ -44,48 +141,48 @@
 
   <div class="slideshow">
     <div class="hero-text">Experience Elegance in Every Square Foot</div>
-    <img src="https://source.unsplash.com/1600x600/?commercial-building" class="active">
-    <img src="https://source.unsplash.com/1600x600/?corporate-office">
-    <img src="https://source.unsplash.com/1600x600/?glass-architecture">
+    <img src="https://source.unsplash.com/1600x600/?real-estate,modern" class="active">
+    <img src="https://source.unsplash.com/1600x600/?glass-office">
+    <img src="https://source.unsplash.com/1600x600/?commercial-complex">
   </div>
 
   <section id="project">
     <h2>About the Project</h2>
-    <p>Blue Emerald is a premium commercial development in Wanowrie, Pune. With only 15 exclusive offices across 7 floors, the project stands tall with landmark architecture, advanced facilities, and a rooftop terrace to elevate your business identity.</p>
+    <p>Blue Emerald is a high-end commercial project situated at the center of Wanowrie. Combining contemporary architecture, functional design, and premium finishes — it's where your business finds its best expression.</p>
   </section>
 
   <section id="architecture">
     <h2>Architecture</h2>
-    <p>Designed by Envision Studio, Blue Emerald features stunning curved glass facades, smart layouts, and an urban design language that blends form with functionality.</p>
-    <img src="https://source.unsplash.com/1200x600/?modern-building,glass" alt="Architecture" style="width:100%; border-radius: 8px;">
+    <p>Designed by leading architectural firm Envision Studio, the structure balances luxury and practicality with its signature curved glass façade and open-plan flexibility.</p>
+    <img src="https://source.unsplash.com/1200x600/?architectural-design,glass" alt="Modern Design" style="width:100%; border-radius: 8px;">
   </section>
 
   <section id="specs">
     <h2>Specifications</h2>
     <ul>
       <li>Earthquake Resistant RCC Frame Structure</li>
-      <li>Modern Elevators & Fire Systems</li>
-      <li>Concealed Copper Wiring</li>
-      <li>Anti-skid Flooring in Wet Areas</li>
-      <li>Vitrified Tile Flooring</li>
-      <li>Premium Glass Facades & Lighting</li>
+      <li>High-speed Elevators & Fire Fighting System</li>
+      <li>Smart Cabling and Concealed Wiring</li>
+      <li>Designer Lobby & Vitrified Tile Flooring</li>
+      <li>Anti-skid Tiles in Toilets</li>
+      <li>Energy-efficient LED Lighting</li>
     </ul>
   </section>
 
   <section id="location">
     <h2>Location & Connectivity</h2>
-    <p>Located at Wanowrie Junction, Blue Emerald connects seamlessly to Fatima Nagar, NIBM, MG Road, and Salunke Vihar. Close to top schools, hospitals, malls, and showrooms.</p>
+    <p>Strategically located at Wanowrie Junction, Blue Emerald offers seamless access to Fatima Nagar, MG Road, NIBM and Salunke Vihar. Close to retail malls, hospitals, showrooms, and public transport.</p>
     <iframe src="https://www.google.com/maps?q=Sr.+No.+75/9+Shantinagar,+Wanowrie,+Pune,+India&output=embed" width="100%" height="300" style="border:0; border-radius: 8px;"></iframe>
   </section>
 
   <section id="gallery">
     <h2>Gallery</h2>
     <div class="gallery">
-      <img src="https://source.unsplash.com/400x300/?luxury-office">
-      <img src="https://source.unsplash.com/400x300/?coworking-space">
-      <img src="https://source.unsplash.com/400x300/?glass-lobby">
-      <img src="https://source.unsplash.com/400x300/?office-building">
-      <img src="https://source.unsplash.com/400x300/?interior-modern">
+      <img src="https://source.unsplash.com/400x300/?glass-building,real-estate">
+      <img src="https://source.unsplash.com/400x300/?commercial-space,interior">
+      <img src="https://source.unsplash.com/400x300/?lobby,interior">
+      <img src="https://source.unsplash.com/400x300/?corporate,architecture">
+      <img src="https://source.unsplash.com/400x300/?workplace,design">
     </div>
     <p><a href="BlueEmerald_Brochure.pdf" download>Download Brochure (PDF)</a></p>
   </section>
