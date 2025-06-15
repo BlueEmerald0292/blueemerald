@@ -1,1 +1,20 @@
-body { font-family: 'Montserrat', sans-serif; background-color: #1a1a1a; color: #f0f0f0; margin: 0; padding: 2rem; } h1 { color: #ffce00; }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    margin: 0; padding: 0;
+}
+h1 {
+    color: #ffce00;
+    padding: 2rem;
+}
+header, footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000;
+}
+video {
+    display: block;
+    margin: 2rem auto;
+}
